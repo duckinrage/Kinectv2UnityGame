@@ -96,9 +96,9 @@ public class MotionDetect : MonoBehaviour {
         
         //counter += 2f;
         //player.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + counter);
-        Vector3 movement = transform.forward * speed * Time.deltaTime;
+        Vector3 movement = player.transform.forward * Time.deltaTime * speed;
         rig.MovePosition(rig.position + movement);
-            //player.transform.position += Vector3.forward * Time.deltaTime * speed;
+            //transform.position += Vector3.forward * Time.deltaTime * speed;
             
                 Debug.Log("move forward");
                 Gcheck1 = false;
